@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Provincial Dr. Ernesto Guevara</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="navbar p-2 fixed top-0 left-0 flex flex-row items-center w-screen justify-around z-999" >
+        <img src="./resources/logo_guevara.png" alt="logo_guevara" class="max-w-20">
+        <svg id="openIcon" class="openIcon cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"><path fill="currentColor" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></svg>
+            <svg id="closeIcon" class="closeIcon cursor-pointer absolute top-3 right-2 z-999" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"><path fill="currentColor" d="M7.4 17.25h1.875l2.675-4.1l2.7 4.1h1.95l-3.625-5.45L16.3 6.75h-1.875l-2.45 3.8l-2.45-3.8H7.6l3.375 5.075zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"/></svg>
+        <div id="headerContainerNav" class="headerNavContainer w-screen h-screen">
+            
+        <nav class=" gap-3 navHeader">
+            <a href="#" class="pagAct ">Inicio</a>
+            <a href="./pages/nosotros.html" class="linkNav no-underline hover:decoration-red-500 hover:underline   underline-offset-8 ">Nosotros</a>
+            <button class="cursor-pointer" id="desplNav">Modalidades
+                <div id="contDesplNavResp" class="responsiveInactive">
+                    <a href="" class=" cursor-pointer linkNav no-underline hover:decoration-red-500 hover:underline   underline-offset-8 ">Modalidad Técnica</a>
+                    <a href="" class=" cursor-pointer linkNav no-underline hover:decoration-red-500 hover:underline   underline-offset-8 ">Modalidad Bachiller orientado</a>
+                </div>
+            </button>
+            <a href="" class=" cursor-pointer linkNav no-underline hover:decoration-red-500 hover:underline   underline-offset-8 ">Noticias</a>
+            <a href="" class=" cursor-pointer linkNav no-underline hover:decoration-red-500 hover:underline   underline-offset-8 ">Contacto</a>            
+        </nav>
+        </div>
+        <div id="contDesplNav" class="inactive ">
+            <a href="" class=" cursor-pointer linkNav no-underline hover:decoration-red-500 hover:underline   underline-offset-8 ">Modalidad Técnica</a>
+            <a href="" class=" cursor-pointer linkNav no-underline hover:decoration-red-500 hover:underline   underline-offset-8 ">Modalidad Bachiller orientado</a>
+        </div>
+    </header>
+    <section id="navbar">
+        <div class="imgBanner mb-0">
+            <div class="flex flex-col  w-screen h-full items-center justify-center bg-zinc-900/70 gap-3"> 
+                <h1 class="text-gray-100 text-4xl">Colegio Provincial Dr. Ernesto Guevara</h1>
+                <h2 class="text-gray-400 text-xl">Río Grande - Tierra del Fuego Antártida e Islas del Atlántico sur</h2>
+            </div>
+        </div>
+    </section>
+    <section id="bienvenida" class="w-screen flex flex-col items-center  justify-center pt-2 mt-20">
+        <h2 class="text-red-600 text-3xl">Bienvenidos</h2>
+        <p class="text-gray-800 text-lg max-w-200">Somos la escuela provincial Dr Ernesto guevara que se destaca como una de las instituciones educactivas más reconocidas de la provincia de Tierra del Fuego Antártida e Islas del Atlántico Sur. Esta fué la primera inclusiva de la región, marcando un antes y un después en la educación al garantizar el acceso  y la participación de estudiantes  con discapacidad. Además, es la escuela técnica más premiada de la provincia gracias a su excelencia académica , sus proyectos innovadores y el compromiso de su comunidad educativa. Con una infraestructura moderna, talleres bien equipados y una enseñanza orientada al futuro, la Escuela Provincial Dr. Ernesto Guevara se consolida cono una de las mejores y más avanzadas escuelas técnicas de TDF.</p>
+    </section>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

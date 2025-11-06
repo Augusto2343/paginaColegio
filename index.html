@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colegio Provincial Dr. Ernesto Guevara</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
-<body>
+<body >
     <header class="navbar p-2 fixed top-0 left-0 flex flex-row items-center w-screen justify-around z-999" >
         <img src="./resources/logo_guevara.png" alt="logo_guevara" class="max-w-20">
         <svg id="openIcon" class="openIcon cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"><path fill="currentColor" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></svg>
@@ -40,11 +40,137 @@
             </div>
         </div>
     </section>
-    <section id="bienvenida" class="w-screen flex flex-col items-center  justify-center pt-2 mt-20">
-        <h2 class="text-red-600 text-3xl">Bienvenidos</h2>
-        <p class="text-gray-800 text-lg max-w-200">El Colegio Provincial Dr. Ernesto Guevara ofrece una formación integral con orientación técnica,
-            promoviendo el desarrollo de habilidades científicas, tecnológicas y humanas. Nuestra comunidad educativa busca inspirar a los estudiantes a alcanzar su máximo potencial para la posterior inserción laboral.</p>
+    <!-- Welcome Section Redesigned (Red, Black, White theme) -->
+    <section id="bienvenida" class="w-screen flex flex-col items-center justify-center pt-16 pb-10 bg-gradient-to-br from-white via-white to-red-50 relative overflow-hidden">
+        <div class="backdrop-blur-md bg-white/80 rounded-[2rem] p-8 md:p-12 shadow-2xl border border-red-100 max-w-5xl flex flex-col items-center gap-4">
+            <h2 class="titulos text-3xl md:text-3xl font-extrabold text-transparent bg-gradient-to-br from-red-800 via-red-600 to-red-400 bg-clip-text drop-shadow-xl tracking-tight font-sans mb-2">Bienvenidos</h2>
+            <p class="text-lg md:text-xl text-black font-medium text-center leading-relaxed">
+                El <span class="font-bold text-red-700">Colegio Provincial Dr. Ernesto Guevara</span> ofrece una formación integral con orientación técnica, promoviendo el desarrollo de habilidades científicas, tecnológicas y humanas.<br>
+                Nuestra comunidad educativa inspira a los estudiantes a alcanzar su máximo potencial, preparándolos para un futuro laboral exitoso.
+            </p>
+        </div>
     </section>
+
+    <!-- Events Section Redesigned (Red, Black, White theme) -->
+    <section class="py-12 bg-gradient-to-b from-white via-white to-red-50">
+        <div class="px-4 mx-auto max-w-screen-xl lg:py-12">
+            <div class="bg-white border-2 bg-gradient-to-b from-neutral-700/00 to-neutral-700/20 border-red-100 hover:border-red-900 rounded-3xl p-10 md:p-14 mb-10 shadow-xl transition-transform hover:scale-[1.015] hover:shadow-2xl duration-300">
+                <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-100 text-xs font-semibold text-red-700 mb-4 tracking-wide shadow-sm">
+                    <iconify-icon icon="ic:baseline-event" width="28" height="28" style="color: #b91c1c"></iconify-icon>
+                    Evento
+                </span>
+                <h2 class="text-black text-4xl md:text-5xl font-bold mb-2 leading-tight tracking-tight font-sans">Muestra escolar Guevariana</h2>
+                <p class="text-lg text-gray-700 mb-6 font-normal max-w-3xl">
+                    La <span class="text-red-700 font-semibold">Muestra Escolar Guevariana</span> es nuestro evento anual donde los estudiantes presentan sus proyectos integradores, combinando <span class="font-semibold text-red-700">creatividad</span>, <span class="font-semibold text-red-700">tecnología</span> y <span class="font-semibold text-red-700">compromiso social</span>.<br>
+                    Es un espacio abierto a la comunidad para conocer el trabajo que se desarrolla en nuestras aulas y talleres.
+                </p>
+                <div class="flex flex-col sm:flex-row w-full justify-center items-center gap-6">
+                    <div class="flex items-center gap-2 px-4 py-2 bg-red-50 rounded-lg shadow border border-red-100">
+                        <iconify-icon icon="ic:round-place" style="color:#b91c1c" width="21" height="21"></iconify-icon>
+                        <span class="text-md font-semibold text-black">Río Candelaria 3460</span>
+                    </div>
+                    <div class="flex items-center gap-2 px-4 py-2 bg-red-50 rounded-lg shadow border border-red-100">
+                        <iconify-icon icon="ic:round-schedule" style="color:#b91c1c" width="21" height="21"></iconify-icon>
+                        <span class="text-md font-semibold text-black">Hora: 16:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div class="relative overflow-hidden hover:border-red-900  bg-white border-2 bg-gradient-to-bl from-neutral-700/00 to-neutral-700/20 border-red-100 rounded-3xl p-10 shadow-lg group hover:shadow-2xl transition-all duration-300">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-xs font-semibold text-red-700 mb-3">
+                        <iconify-icon icon="ic:baseline-event" width="22" height="22" style="color: #b91c1c"></iconify-icon>
+                        Evento
+                    </span>
+                    <h3 class="text-2xl md:text-3xl font-bold text-black mb-2">2<sup>nda</sup> edición de TecnoGrande</h3>
+                    <p class="text-base md:text-lg text-gray-700 mb-3 leading-relaxed">
+                        En la segunda edición de <span class="text-red-800 font-semibold">TecnoGrande</span>, el Colegio Dr. Ernesto Guevara participará junto a otras instituciones técnicas de Río Grande, presentando innovadores proyectos realizados por nuestros estudiantes.<br>
+                        <span class="text-red-700 font-semibold">¡Descubrí el futuro en manos jóvenes!</span>
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="relative overflow-hidden hover:border-red-900  bg-gradient-to-br from-neutral-700/0 to-neutral-700/20 border-2 border-red-100 rounded-3xl p-10 shadow-lg group hover:shadow-2xl transition-all duration-300">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-200 text-xs font-semibold text-red-900 mb-3">
+                        <iconify-icon icon="solar:health-broken" width="22" height="22" style="color: #b91c1c"></iconify-icon>
+                        EOD
+                    </span>
+                    <h3 class="text-2xl md:text-3xl font-bold text-black mb-2">Espacios de orientación psicológicas</h3>
+                    <p class="text-base md:text-lg text-gray-700 mb-3 leading-relaxed">
+                        El colegio cuenta con un <span class="text-red-700 font-semibold">equipo de orientación y apoyo psicológico</span> que acompaña a familias, docentes y estudiantes para promover <span class="font-bold text-black">bienestar emocional</span>, <span class="font-bold text-black">inclusión</span> y <span class="font-bold text-black">convivencia escolar</span>.<br>
+                        También ofrecemos <span class="text-red-700 font-medium">tutorías personalizadas</span> para fortalecer el aprendizaje y la integración.
+                    </p>
+                    <a href="#" class="inline-flex items-center gap-2 px-4 py-2 mt-2 bg-gradient-to-r from-red-700 via-red-600 to-red-500 text-white rounded-full shadow-lg transition-all duration-150 hover:from-red-800 hover:to-red-600 font-semibold text-base group-hover:shadow-xl">
+                        Leer más
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section Redesigned (Red, Black, White theme) -->
+    <section class="w-screen h-full py-10 flex flex-col justify-center items-center bg-gradient-to-tl from-white via-white to-red-50 shadow-inner">
+        <div class="min-w-[250px] max-w-3xl w-full px-2 sm:px-4 py-6 rounded-2xl bg-white/90 shadow-2xl backdrop-blur-lg border border-red-100">
+            <h3 class="text-3xl md:text-4xl font-bold text-center text-black mb-4 drop-shadow-sm tracking-wide">
+                Galería del <span class="text-red-700 font-extrabold">Guevara</span>
+            </h3>
+            <div id="indicators-carousel" class="min-h-250 relative w-full" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-full overflow-hidden rounded-xl  min-h-250 shadow-lg">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                        <iframe id="videoCarousel" class="absolute block min-h-96 min-w-[320px] max-w-[480px] rounded-2xl border-[4px] border-red-300 drop-shadow-xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            src="https://www.facebook.com/plugins/video.php?height=469&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1222243039737077%2F&show_text=false&width=400&t=0"
+                            scrolling="no" frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                            allowFullScreen="true"></iframe>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./pagColegio 2/XD/Imagenes/imagenGuevara.jpg" class="absolute block rounded-xl shadow-2xl border-4 border-red-300 w-full max-w-[480px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/docs/images/carousel/carousel-3.svg" class="absolute block rounded-xl shadow-2xl border-4 border-red-300 w-full max-w-[480px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/docs/images/carousel/carousel-4.svg" class="absolute block rounded-xl shadow-2xl border-4 border-red-300 w-full max-w-[480px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/docs/images/carousel/carousel-5.svg" class="absolute block rounded-xl shadow-2xl border-4 border-red-300 w-full max-w-[480px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+                    <button type="button" class="w-4 h-4 rounded-full bg-white border-2 border-red-400 ring-2 ring-red-700 ring-offset-2 transition-all hover:scale-125 focus:ring-4" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-4 h-4 rounded-full bg-white border-2 border-red-400 hover:scale-125 transition-all focus:ring-4" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-4 h-4 rounded-full bg-white border-2 border-red-400 hover:scale-125 transition-all focus:ring-4" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-4 h-4 rounded-full bg-white border-2 border-red-400 hover:scale-125 transition-all focus:ring-4" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                    <button type="button" class="w-4 h-4 rounded-full bg-white border-2 border-red-400 hover:scale-125 transition-all focus:ring-4" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button" class="absolute top-1/2 left-0 z-30 flex items-center justify-center w-12 h-12 -translate-y-1/2 px-3 cursor-pointer group focus:outline-none rounded-full bg-gradient-to-r from-white via-red-50 to-red-100 shadow-lg hover:scale-110 transition-all duration-150 ring-2 ring-red-200 ring-offset-2" data-carousel-prev>
+                    <svg class="w-6 h-6 text-red-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Anterior</span>
+                </button>
+                <button type="button" class="absolute top-1/2 right-0 z-30 flex items-center justify-center w-12 h-12 -translate-y-1/2 px-3 cursor-pointer group focus:outline-none rounded-full bg-gradient-to-l from-white via-red-50 to-red-100 shadow-lg hover:scale-110 transition-all duration-150 ring-2 ring-red-200 ring-offset-2" data-carousel-next>
+                    <svg class="w-6 h-6 text-red-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
     <script src="./scripts/script.js"></script>
 </body>
 </html>

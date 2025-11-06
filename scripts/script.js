@@ -30,6 +30,7 @@ desplNav.onclick = (e) =>{
 }
 const setNavClasses = () =>{
     tamanioVentana = window.innerWidth;
+
     if(tamanioVentana < 501) containerNav.classList.add("w-screen","h-screen");
     else containerNav.classList.remove("w-screen","h-screen")
 }

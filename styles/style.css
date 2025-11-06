@@ -11,9 +11,18 @@ h1{
     color: red;
 }
 .navbar{
+    animation: aparecerNav 1s;
     transition: 0.5s;
     color: white;
     background: linear-gradient(120deg, #8406256a 0%,  #1212126a 100%);
+}
+@keyframes aparecerNav {
+    0%{
+        top: -10%;
+    }
+    100%{
+        top:0%;
+    }
 }
 .navbar:hover{
     background: linear-gradient(120deg, #840625dd 0%,  #121212dd 100%);
@@ -112,7 +121,7 @@ ol{
         transform-origin: top;
         transform: scaleY(0);
     }
-    .responsiveActive{
+    .responsiveActive{padding: 4px;
         opacity: 1;
         display: flex;
         transform: scaleY(1);
@@ -132,7 +141,7 @@ ol{
     .active{
         display: flex;
         background-image: none;
-        
+        background-color: #3c0000;
         margin-top: 30px;
         margin-bottom: 30px;
         opacity: 1;

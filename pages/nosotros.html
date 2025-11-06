@@ -3,57 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nosotros</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <header class="navbar p-2 fixed top-0 left-0 flex flex-row items-center w-screen justify-around" >
+    <header class="navbar p-2 fixed top-0 left-0 flex flex-row items-center w-screen justify-around z-999" >
         <img src="../resources/logo_guevara.png" alt="logo_guevara" class="max-w-20">
-        <nav class="flex flex-row gap-3 ">
-            <a href="../index.html" class=" linkNav no-underline hover:decoration-red-500 hover:underline   underline-offset-8 ">Inicio</a>
-            <a href="#" class="pagAct">Nosotros</a>
-            <button class="cursor-pointer" id="desplNav">Modalidades</button>
+        <svg id="openIcon" class="openIcon cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"><path fill="currentColor" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></svg>
+            <svg id="closeIcon" class="closeIcon cursor-pointer absolute top-3 right-2 z-999" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"><path fill="currentColor" d="M7.4 17.25h1.875l2.675-4.1l2.7 4.1h1.95l-3.625-5.45L16.3 6.75h-1.875l-2.45 3.8l-2.45-3.8H7.6l3.375 5.075zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"/></svg>
+        <div id="headerContainerNav" class="headerNavContainer w-screen h-screen">
+            
+        <nav class=" gap-3 navHeader">
+            <a href="../index.html" class="linkNav no-underline hover:decoration-red-500 hover:underline   underline-offset-8">Inicio</a>
+            <a href="#" class="pagAct  ">Nosotros</a>
+            <button class="cursor-pointer" id="desplNav">Modalidades
+                <div id="contDesplNavResp" class="responsiveInactive">
+                    <a href="" class=" cursor-pointer linkNav no-underline hover:decoration-red-500 hover:underline   underline-offset-8 ">Modalidad Técnica</a>
+                    <a href="" class=" cursor-pointer linkNav no-underline hover:decoration-red-500 hover:underline   underline-offset-8 ">Modalidad Bachiller orientado</a>
+                </div>
+            </button>
             <a href="" class=" cursor-pointer linkNav no-underline hover:decoration-red-500 hover:underline   underline-offset-8 ">Noticias</a>
             <a href="" class=" cursor-pointer linkNav no-underline hover:decoration-red-500 hover:underline   underline-offset-8 ">Contacto</a>            
         </nav>
+        </div>
         <div id="contDesplNav" class="inactive ">
             <a href="" class=" cursor-pointer linkNav no-underline hover:decoration-red-500 hover:underline   underline-offset-8 ">Modalidad Técnica</a>
             <a href="" class=" cursor-pointer linkNav no-underline hover:decoration-red-500 hover:underline   underline-offset-8 ">Modalidad Bachiller orientado</a>
         </div>
     </header>
+    <section class="bannerNosotros min-h-200 w-screen flex flex-col justify-center items-center">
+        <h2 class="titulos text-4xl text-gray-200">Nosotros</h2>
+        <p class="text-gray-900 mt-7 max-w-250 text-center ">Somos la escuela provincial Dr Ernesto guevara que se destaca como una de las instituciones educactivas más reconocidas de la provincia de Tierra del Fuego Antártida e Islas del Atlántico Sur.<br> Esta fué la primera escuela inclusiva de la región, marcando un antes y un después en la educación al garantizar el acceso  y la participación de estudiantes  con discapacidad. Además, es la escuela técnica más premiada de la provincia gracias a su excelencia académica , sus proyectos innovadores y el compromiso de su comunidad educativa. Con una infraestructura moderna, talleres bien equipados y una enseñanza orientada al futuro, la Escuela Provincial Dr. Ernesto Guevara se consolida cono una de las mejores y más avanzadas escuelas técnicas de TDF.</p>
+    </section>
     <section id="historiaEsc" class=" mt-34 flex flex-col items-center justify-center w-screen z-998">
-       <h1 class="text-gray-800 text-4xl">Historia de la institución</h1>
-<ol class="relative border-s border-gray-200 dark:border-gray-700">                  
-    <li class="mb-10 ms-4">
+       <h1 class="text-gray-800 text-3xl">Historia de la institución</h1>
+<ol class="relative max-w-400 border-s border-red-200 dark:border-red-700 ml-3 mb-20">                  
+    <li class="list-decoration-colomb-10 ms-4">
         
-        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Feb</time>
+        <div class="absolute w-3 h-3 bg-red-800 rounded-full mt-1.5 -start-1.5 border border-red dark:border-red-900 dark:bg-red-700"></div>
+        <time class="mb-1 text-sm font-normal leading-none text-red-900 dark:text-red-900">2005</time>
         
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
-        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
-        <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn more <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-  </svg></a>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-800">Fundación de la escuela</h3>
+        <p class="mb-4 text-base font-normal text-gray-900 dark:text-gray-900"> Nace la Escuela Provincial Dr. Ernesto Guevara con un objetivo claro: incluir a jóvenes fuera del sistema educativo, chicos que hayan sido expulsados de otras escuelas, se creó con la idea de reinsertarlos en el sistema educativo. El Guevara inicia su historia solo con la modalidad de bachiller, no existía la modalidad técnica hasta algunos años después.</p>
     </li>
     <li class="mb-10 ms-4">
-        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2022</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Marketing UI design in Figma</h3>
-        <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
+        <div class="absolute w-3 h-3 bg-red-800 rounded-full mt-1.5 -start-1.5 border border-red dark:border-red-900 dark:bg-red-700"></div>
+        <time class="mb-1 text-sm font-normal leading-none text-red-900 dark:text-red-900">2007-2008</time>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-800">Nacimiento de los TTP</h3>
+        <p class="text-base text-center font-normal text-gray-900 dark:text-gray-900">Comienza a trabajar junto al Centro de Formación Laboral Manuel Belgrano para poder brindar mas ayuda a los estudiantes que ingresaban. de esta colaboración nace el TTP (Trayectos Técnico-Profesionales), esto ya que en el momento no existían las escuelas técnicas en argentina, pero el TTP se mantuvo con el tiempo y finalmente se convirtió en la modalidad técnica actual del Guevara.</p>
     </li>
-    <li class="ms-4">
-        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2022</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in Tailwind CSS</h3>
-        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+    <li class="mb-10 ms-4">
+        <div class="absolute w-3 h-3 bg-red-800 rounded-full mt-1.5 -start-1.5 border border-red dark:border-red-900 dark:bg-red-700"></div>
+        <time class="mb-1 text-sm font-normal leading-none text-red-900 dark:text-red-900">2014</time>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-800">Primera promoción técnica</h3>
+        <p class="text-base text-center font-normal text-gray-900 dark:text-gray-900"> En este año se egresa finalmente la primera promoción de técnicos del Guevara, esto gracias a la renovación de la ley nacional de educación técnica (26.206), permitiendo finalmente a las escuelas dejar el modelo de los TTPs y ser finalmente una escuela secundaria con modalidad técnica.</p>
+    </li>
+    <li class="mb-10 ms-4">
+        <div class="absolute w-3 h-3 bg-red-800 rounded-full mt-1.5 -start-1.5 border border-red dark:border-red-900 dark:bg-red-700"></div>
+        <time class="mb-1 text-sm font-normal leading-none text-red-900 dark:text-red-900">2018</time>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-800">Traslado al nuevo edificio</h3>
+        <p class="text-base text-center font-normal text-gray-900 dark:text-gray-900">En este año la escuela se muda finalmente al edificio en el que hoy se encuentra. Esto trajo miedo y tensiones en los docentes ya que venían del centro de la ciudad ya con conflictos. El miedo venia debido a la posibilidad perder matriculas, a perder estudiantes por la lejanía. Sin embargo, ocurrió lo contrario. Las familias del barrio respondieron muy bien a la propuesta y la escuela no solo mantuvo su matrícula, sino que creció aún más.</p>
+    </li>
+    <li class="mb-10 ms-4">
+        <div class="absolute w-3 h-3 bg-red-800 rounded-full mt-1.5 -start-1.5 border border-red dark:border-red-900 dark:bg-red-700"></div>
+        <time class="mb-1 text-sm font-normal leading-none text-red-900 dark:text-red-900">2022</time>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-800">Nueva coordinación del trayecto técnico</h3>
+        <p class="text-base text-center font-normal text-gray-900 dark:text-gray-900">Hugo Barrera asume coordinación del trayecto técnico. El anterior dueño del cargo Alejandro Quevedo había empezado negociaciones con distintas organizaciones y empresas con la propuesta de practicas profesionalizantes echas por los alumnos. este mismo año Hugo firmó un convenio con Mirgor, logrando incluir a los primeros 12 estudiantes de 7° año en prácticas laborales.</p>
+    </li>
+    <li class="mb-10 ms-4">
+        <div class="absolute w-3 h-3 bg-red-800 rounded-full mt-1.5 -start-1.5 border border-red dark:border-red-900 dark:bg-red-700"></div>
+        <time class="mb-1 text-sm font-normal leading-none text-red-900 dark:text-red-900">2023</time>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-800">Ampliación de la cartera de empresas para las prácticas profesionalizantes</h3>
+        <p class="text-base text-center font-normal text-gray-900 dark:text-gray-900">Con el nuevo cargo de Vinculación Socio-Productiva, a cargo de Cecilia Mendoza, se suman más empresas a la propuesta de practicas profesionalizantes: Autosur, El Dorado, BGH, y Municipalidad. Todo esto gracias a el trabajo del personal como Cecilia Mendoza y Hugo Barrera, incluyendo el buen trabajo que hacían los estudiantes.</p>
     </li>
 </ol>
-
-
-
     </section>
+    
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="../scripts/script.js"></script>
 </body>

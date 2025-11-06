@@ -6,24 +6,24 @@ const closeNavBtn = document.getElementById("closeIcon");
 const responsiveContNavDespl = document.getElementById("contDesplNavResp")
 let tamanioVentana=0;
 openNavBtn.onclick = (e) =>{
-    console.log("b");
+   
     containerNav.classList.add("responsiveActive");
     closeNavBtn.classList.add("responsiveActive");
 
 }
 closeNavBtn.onclick = (e) =>{
-    console.log("a");
+   
     containerNav.classList.remove("responsiveActive");
     closeNavBtn.classList.remove("responsiveActive");
     closeNavBtn.classList.add("hidden");
 }
 desplNav.onclick = (e) =>{
-    console.log(tamanioVentana);
+   
     if(tamanioVentana < 501) {
         responsiveContNavDespl.classList.toggle("active")
     }
     else{
-        console.log(e.target)
+       
         contNavDespl.classList.toggle("active")
     }
     

@@ -17,7 +17,9 @@ h1{
 }
 .navbar:hover{
     background: linear-gradient(120deg, #840625dd 0%,  #121212dd 100%);
-
+}
+.linkNav{
+    transition: width 0.5s
 }
 .linkNav:hover{
     transition: 0.21s;
@@ -54,6 +56,9 @@ h1{
     background-image: linear-gradient(35deg,#8a6767,#b3a1a1);
     
 }
+.bannerNosotros{
+    background-image: linear-gradient(to right bottom, #000, #905252,#00000017);
+}
 .imgBanner{
     background-image: url("https://scontent.frga1-1.fna.fbcdn.net/v/t39.30808-6/476418072_1245389237105929_5945454386898745457_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=K-bFolMgqOMQ7kNvwEJvGV9&_nc_oc=AdkuEq8jmpl6M31ttpaUJy1f_EADk0Em2e3DcoYapcuwfpVtJv-hgWjBJd6_0JFOZaM&_nc_zt=23&_nc_ht=scontent.frga1-1.fna&_nc_gid=WSeVa7OUHmpz4MWWXhkgAg&oh=00_AfjrE5Z4cYRZLYvBqbfRjY3wCW7_J6hnXK8W_X9UICB1OQ&oe=690FACCE");
     background-position: center;
@@ -73,7 +78,9 @@ h1{
     transform: translateY(-10px);
     transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
-
+ol{
+    color: #3c0000 !important;
+}
 .closeIcon{
     opacity: 0;
     display: none;
@@ -82,7 +89,9 @@ h1{
     opacity: 0;
     display: none;
 }
-
+.titulos{
+    font-family: "FuentePrincipal";
+}
 @media (max-width:500px) {
     .navHeader{
         flex-flow: column nowrap;

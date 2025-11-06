@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colegio Provincial Dr. Ernesto Guevara</title>
+  <style>
+    /* ======== ESTILOS GENERALES ======== */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    header {
+      background-color: #000000;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+    }
+
+    header img {
+      height: 70px;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      position: relative;
+      transition: 0.3s;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #ffcc00;
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* ======== SECCIÓN PRINCIPAL ======== */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #ff0000 0%, #000000 100%);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      color: #ffcc00;
+    }
+
+    /* ======== SECCIÓN INFORMACIÓN ======== */
+    .info {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .info h2 {
+      color: #d40000;
+      font-size: 2em;
+    }
+
+    .info p {
+      max-width: 800px;
+      margin: 20px auto;
+      line-height: 1.6;
+    }
+
+    /* ======== PIE DE PÁGINA ======== */
+    footer {
+      background-color: #000000;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9em;
+      border-top: 3px solid #ffcc00;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <img src="logo.png" alt="Logo Colegio Ernesto Guevara">
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Carreras</a>
+      <a href="#">Noticias</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Sección principal -->
+  <section class="hero">
+    <h1>Colegio Provincial Dr. Ernesto Guevara</h1>
+    <p>Río Grande – Tierra del Fuego</p>
+  </section>
+
+  <!-- Información -->
+  <section class="info">
+    <h2>Bienvenidos</h2>
+    <p>
+      El Colegio Provincial Dr. Ernesto Guevara ofrece una formación integral con orientación técnica, 
+      promoviendo el desarrollo de habilidades científicas, tecnológicas y humanas. 
+      Nuestra comunidad educativa busca inspirar a los estudiantes a alcanzar su máximo potencial, 
+      fomentando la creatividad, el pensamiento crítico y el compromiso social.
+    </p>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    © 2025 Colegio Provincial Dr. Ernesto Guevara - Río Grande, T.D.F
+  </footer>
+</body>
+</html>

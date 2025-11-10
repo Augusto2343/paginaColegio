@@ -3,6 +3,10 @@
     font-family: "FuentePrincipal";
     src: url("../resources/pirulen_rg.ttf");
 }
+.animate__animated.animate__bounce {
+    --animate-duration: 2s;
+  }
+  
 h1{
     font-family: "FuentePrincipal";
     font-weight: 500;

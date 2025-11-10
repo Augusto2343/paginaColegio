@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colegio Provincial Dr. Ernesto Guevara</title>
     <link rel="stylesheet" href="./styles/style.css">
+
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body >
     <header class="navbar p-2 fixed top-0 left-0 flex flex-row items-center w-screen justify-around z-999" >
@@ -35,14 +41,14 @@
     <section id="navbar">
         <div class="imgBanner mb-0">
             <div class="flex flex-col  w-screen h-full items-center justify-center bg-zinc-900/70 gap-3"> 
-                <h1 class="text-gray-100 text-4xl">Colegio Provincial Dr. Ernesto Guevara</h1>
+                <h1 class="animate__animated animate__fadeInUp text-gray-100 text-4xl">Colegio Provincial Dr. Ernesto Guevara</h1>
                 <h2 class="text-gray-400 text-xl">Río Grande - Tierra del Fuego Antártida e Islas del Atlántico sur</h2>
             </div>
         </div>
     </section>
     <!-- Welcome Section Redesigned (Red, Black, White theme) -->
-    <section id="bienvenida" class="w-screen flex flex-col items-center justify-center pt-16 pb-10 bg-gradient-to-br from-white via-white to-red-50 relative overflow-hidden">
-        <div class="backdrop-blur-md bg-white/80 rounded-[2rem] p-8 md:p-12 shadow-2xl border border-red-100 max-w-5xl flex flex-col items-center gap-4">
+    <section id="bienvenida" class=" w-screen flex flex-col items-center justify-center pt-16 pb-10 bg-gradient-to-br from-white via-white to-red-50 relative overflow-hidden">
+        <div class="animate__animated animate__fadeInDown backdrop-blur-md bg-white/80 rounded-[2rem] p-8 md:p-12 shadow-2xl border border-red-100 max-w-5xl flex flex-col items-center gap-4">
             <h2 class="titulos text-3xl md:text-3xl font-extrabold text-transparent bg-gradient-to-br from-red-800 via-red-600 to-red-400 bg-clip-text drop-shadow-xl tracking-tight font-sans mb-2">Bienvenidos</h2>
             <p class="text-lg md:text-xl text-black font-medium text-center leading-relaxed">
                 El <span class="font-bold text-red-700">Colegio Provincial Dr. Ernesto Guevara</span> ofrece una formación integral con orientación técnica, promoviendo el desarrollo de habilidades científicas, tecnológicas y humanas.<br>
@@ -54,7 +60,7 @@
     <!-- Events Section Redesigned (Red, Black, White theme) -->
     <section class="py-12 bg-gradient-to-b from-white via-white to-red-50">
         <div class="px-4 mx-auto max-w-screen-xl lg:py-12">
-            <div class="bg-white border-2 bg-gradient-to-b from-neutral-700/00 to-neutral-700/20 border-red-100 hover:border-red-900 rounded-3xl p-10 md:p-14 mb-10 shadow-xl transition-transform hover:scale-[1.015] hover:shadow-2xl duration-300">
+            <div data-aos="fade-down" data-aos-duration="1000"  class=" bg-white border-2 bg-gradient-to-b from-neutral-700/00 to-neutral-700/20 border-red-100 hover:border-red-900 rounded-3xl p-10 md:p-14 mb-10 shadow-xl transition-transform hover:scale-[1.015] hover:shadow-2xl duration-300">
                 <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-100 text-xs font-semibold text-red-700 mb-4 tracking-wide shadow-sm">
                     <iconify-icon icon="ic:baseline-event" width="28" height="28" style="color: #b91c1c"></iconify-icon>
                     Evento
@@ -77,7 +83,7 @@
             </div>
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- Card 1 -->
-                <div class="relative overflow-hidden hover:border-red-900  bg-white border-2 bg-gradient-to-bl from-neutral-700/00 to-neutral-700/20 border-red-100 rounded-3xl p-10 shadow-lg group hover:shadow-2xl transition-all duration-300">
+                <div data-aos="fade-down" data-aos-duration="1500" class="relative overflow-hidden hover:border-red-900  bg-white border-2 bg-gradient-to-bl from-neutral-700/00 to-neutral-700/20 border-red-100 rounded-3xl p-10 shadow-lg group hover:shadow-2xl transition-all duration-300">
                     <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-xs font-semibold text-red-700 mb-3">
                         <iconify-icon icon="ic:baseline-event" width="22" height="22" style="color: #b91c1c"></iconify-icon>
                         Evento
@@ -89,7 +95,7 @@
                     </p>
                 </div>
                 <!-- Card 2 -->
-                <div class="relative overflow-hidden hover:border-red-900  bg-gradient-to-br from-neutral-700/0 to-neutral-700/20 border-2 border-red-100 rounded-3xl p-10 shadow-lg group hover:shadow-2xl transition-all duration-300">
+                <div data-aos="fade-up" data-aos-duration="1200"  class="relative overflow-hidden hover:border-red-900  bg-gradient-to-br from-neutral-700/0 to-neutral-700/20 border-2 border-red-100 rounded-3xl p-10 shadow-lg group hover:shadow-2xl transition-all duration-300">
                     <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-200 text-xs font-semibold text-red-900 mb-3">
                         <iconify-icon icon="solar:health-broken" width="22" height="22" style="color: #b91c1c"></iconify-icon>
                         EOD
@@ -171,9 +177,14 @@
     <footer class="bg-black text-white text-center py-6 text-sm border-t-4 border-red-600">
         © 2025 Colegio Provincial Dr. Ernesto Guevara - Río Grande Tierra del Fuego, Antártida e Islas del Atlántico Sur
       </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./scripts/script.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
